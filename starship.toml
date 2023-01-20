@@ -12,7 +12,7 @@ $python\
 $nodejs\
 $golang\
 $c\
-$cmd_duration$jobs$time\
+$sudo$cmd_duration$jobs$time\
 $line_break\
 $character"""
 
@@ -24,6 +24,12 @@ symbol = ""
 style = "bold red"
 number_threshold = 1
 format = '\[[$symbol]($style)\] '
+
+[sudo]
+style = 'bold green'
+symbol = '💻'
+disabled = false
+format = '\[[$symbol]($style)\]'
 
 [battery]
 disabled = true

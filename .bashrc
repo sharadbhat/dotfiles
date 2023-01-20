@@ -74,6 +74,17 @@ xterm*|rxvt*)
     ;;
 esac
 
+function mkcd {
+last=$(eval "echo \$$#")
+if [ ! -n "$last" ]; then
+    echo "Enter a directory name"
+elif [ -d $last ]; then
+    echo "\`$last' already exists"
+else
+    mkdir $@ && cd $last
+fi
+}
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
