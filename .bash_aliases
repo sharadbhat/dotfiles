@@ -6,4 +6,5 @@ alias ll='exa --classify --color=auto --icons -l'
 alias lla='exa --classify --color=auto --icons -la'
 alias cat=bat
 alias cls=clear
-alias xclip='xclip -selection clipboard'
+alias htop=btm
+alias cal='ncal -C'
