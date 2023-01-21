@@ -4,6 +4,9 @@
 
 eval "$(starship init bash)"
 
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
